@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LifeSaver</string>
+    <string name="title_activity_request">request</string>
+    <string name="message_elipses">Message...</string>
+</resources>

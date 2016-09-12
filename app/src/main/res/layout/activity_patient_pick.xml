@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dubico.lifesaver.PatientPick">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/patient_picture"
+
+
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Patient name: "
+        android:id="@+id/patient_name"
+        android:layout_below="@+id/patient_picture"
+        android:layout_alignLeft="@+id/patient_picture"
+        android:layout_alignStart="@+id/patient_picture" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Patient Age: "
+        android:id="@+id/patient_age"
+        android:layout_below="@+id/patient_name"
+        android:layout_alignLeft="@+id/patient_name"
+        android:layout_alignStart="@+id/patient_name"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Diagnosis:"
+        android:id="@+id/diagnosis"
+        android:layout_below="@+id/patient_age"
+        android:layout_alignLeft="@+id/patient_age"
+        android:layout_alignStart="@+id/patient_age"
+        android:layout_marginTop="28dp" />
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/accept_patient"
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:src="@drawable/ic_action_tick"
+        app:cb_color="#99CC00"
+        app:cb_pressedRingWidth="8dip"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <at.markushi.ui.CircleButton
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:src="@drawable/white_x"
+        app:cb_color="#ff0000"
+        app:cb_pressedRingWidth="8dip"
+        android:id="@+id/switch_patient"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/chat_button"
+
+        android:text="chat"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/chat_button"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
